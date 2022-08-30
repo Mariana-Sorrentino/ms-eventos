@@ -41,9 +41,6 @@
               <li class="nav-item"  id="itens">
                 <a href="/events/create" class="nav-link">Criar Eventos</a>
               </li>
-              <li class="nav-item" id="itens">
-                <a href="/contact" class="nav-link">Contato</a>
-              </li>
               @auth
               <li class="nav-item" id="itens">
                 <a href="/dashboard" class="nav-link">Meus Eventos</a>
@@ -53,15 +50,6 @@
                   @csrf
                   <a href="javascript:document.logout.submit()" class="nav-link">Sair</a>
                 </form>
-                {{-- <form action="/logout" method="POST">
-                  @csrf
-                  <a href="/logout" 
-                    class="nav-link" 
-                    onclick="event.preventDefaut();
-                    this.closest('form').submit();">
-                    Sair
-                  </a>
-                </form> --}}
               </li>
               @endauth
               @guest
